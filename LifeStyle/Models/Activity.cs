@@ -7,6 +7,7 @@ namespace LifeStyle
 {
 	public class Activity
 	{
+		
 		[PrimaryKey, AutoIncrement]
 		public int ActivityId { get; set; }
 
