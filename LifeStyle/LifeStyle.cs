@@ -1,26 +1,31 @@
 ﻿using System;
 
 using Xamarin.Forms;
+using Autofac;
 
 namespace LifeStyle
 {
 	public class App : Application
 	{
+		public static IContainer container;
+
+		/*Page GetMainActivity ()
+		{
+			throw new NotImplementedException ();
+		}*/
+
 		public App ()
 		{
-			// The root page of your application
-			MainPage = new ContentPage {
-				Content = new StackLayout {
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							XAlign = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-				}
-			};
+			//throw new NotImplementedException ();
+			MainPage = new InicioPage();
+
+			container = AutofacConfiguration.Init();
 		}
+
+		/*public App(string dataBaseName, ISQLite sqlitePltf)
+		{
+			MainPage = GetMainActivity();
+		}*/
 
 		protected override void OnStart ()
 		{
