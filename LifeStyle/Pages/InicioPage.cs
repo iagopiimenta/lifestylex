@@ -31,7 +31,7 @@ namespace LifeStyle
 					btnVisualizar,
 					}
 			};
-				
+				// nada de mais 
 		}
 	}
 }
