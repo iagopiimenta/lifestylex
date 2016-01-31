@@ -72,7 +72,7 @@ namespace LifeStyle
 											
 											LBdescricao,	
 											lbDia,
-												
+												//dia
 											}
 											}
 									}
